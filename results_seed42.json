@@ -1,0 +1,49 @@
+{
+  "seed": 42,
+  "n_train": 1000,
+  "n_eval": 900,
+  "n_attacked_eval": 300,
+  "n_benign_eval": 600,
+  "twin_invisibility_matches": 300,
+  "f1_isolation_attacked": 0.0,
+  "f1_isolation_benign": 1.0,
+  "f1_proviso_attacked": 1.0,
+  "f1_proviso_benign": 1.0,
+  "gate2": {
+    "f1_gap_benign_minus_attacked": 1.0,
+    "paired_correctness_gap": 1.0,
+    "ci95": [
+      1.0,
+      1.0
+    ],
+    "bar": 0.15,
+    "pass": true
+  },
+  "gate3_security": {
+    "delta_f1": 1.0,
+    "ci95": [
+      1.0,
+      1.0
+    ],
+    "bar": 0.1,
+    "pass": true
+  },
+  "gate3_utility": {
+    "loss_iso_minus_prov_benign": 0.0,
+    "delta_f1_prov_minus_iso_benign": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "abs_bar": 0.02,
+    "pass": true
+  },
+  "brier_proviso": 0.03389425389959278,
+  "brier_isolation": 0.1822416098070012,
+  "ablation_no_marker_q3": {
+    "f1_proviso_attacked": 1.0,
+    "f1_proviso_benign": 1.0
+  },
+  "overall_pass": true,
+  "cpu_seconds": 27.8
+}
